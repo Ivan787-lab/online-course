@@ -400,6 +400,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      height: max-content;
 
       .timeline__week {
         position: relative;
@@ -488,6 +489,61 @@ main {
         left: -240px;
       }
     }
+  }
+  .main__our-teachers {
+    position: relative;
+    top: -750px;
+    display: flex;
+    flex-direction: column;
 
+    .our-teachers__title {
+      margin-left: 45px;
+      display: flex;
+      align-items: center;
+      width: 350px;
+      justify-content: space-between;
+    }
+
+    .our-teachers__teachers {
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+      align-self: center;
+      margin-top: 30px;
+
+      .teachers-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .teachers-block__teacher-photo {
+          width: 190px;
+          height: 190px;
+          border-radius: 50%;
+        }
+
+        .teachers-block__title {
+          font-size: 24px;
+          line-height: 140%;
+          margin: 25px 0;
+        }
+
+        .teachers-block__text {
+          font-size: 16px;
+          line-height: 160%;
+          opacity: 0.8;
+          margin: 5px 0 20px 0;
+        }
+
+        .teachers-block__link {
+          color: white;
+          text-decoration: none;
+          font-family: 'Roboto-Light';
+          padding: 10px 25px;
+          border: $bd;
+          border-radius: 50px;
+        }
+      }
+    }
   }
 }
