@@ -108,6 +108,7 @@ main {
         cursor: pointer;
         width: 169px;
         height: 44px;
+        color: white;
       }
       .total__inforamtion {
         font-size: 16px;
@@ -332,12 +333,12 @@ main {
     width: 1315px;
     align-self: center;
     margin-top: 250px;
-  
+
     .our-partners__title {
       display: flex;
       align-items: center;
     }
-  
+
     .our-partners__images {
       display: flex;
       align-items: center;
@@ -358,11 +359,135 @@ main {
         &:nth-child(4) {
           border-right: none;
         }
+        &:nth-child(5) {
+          border-bottom: none;
+        }
+        &:nth-child(6) {
+          border-bottom: none;
+        }
+        &:nth-child(7) {
+          border-bottom: none;
+        }
         &:last-child {
           border: none;
         }
       }
     }
   }
-  
+  .main__training-programm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .training-programm__title {
+      margin-top: 20px;
+      font-size: 48px;
+      line-height: 140%;
+    }
+
+    .training-programm__subtitle {
+      font-size: 16px;
+      line-height: 160%;
+      width: 411px;
+      text-align: center;
+      opacity: 0.5;
+      margin-top: 20px;
+    }
+
+    .training-programm__timeline {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .timeline__week {
+        position: relative;
+        text-align: right;
+
+        .week__title {
+          font-size: 14px;
+          line-height: 160%;
+          opacity: 0.5;
+          font-family: "Roboto-Light";
+          margin-bottom: 15px;
+        }
+
+        .week__text {
+          font-size: 18px;
+          line-height: 160%;
+          width: 228px;
+        }
+
+        .week__line-svg {
+          position: relative;
+          top: -60px;
+          left: 50px;
+        }
+      }
+    }
+    #first-week_left {
+      top: -650px;
+      left: -180px;
+    }
+    #second-week_left {
+      top: -600px;
+      left: -180px;
+    }
+    #third-week_left {
+      top: -550px;
+      left: -180px;
+    }
+    #fourth-week_left {
+      top: -500px;
+      left: -180px;
+    }
+
+    #first-week_right {
+      top: -1030px;
+      left: 180px;
+
+      .week__title {
+        text-align: left;
+      }
+      .week__text {
+        text-align: left;
+      }
+      .week__line-svg {
+        position: relative;
+        left: -240px;
+      }
+    }
+    #second-week_right {
+      top: -970px;
+      left: 180px;
+
+      .week__title {
+        text-align: left;
+      }
+      .week__text {
+        text-align: left;
+      }
+      .week__line-svg {
+        position: relative;
+        left: -240px;
+      }
+    }
+    #third-week_right {
+      top: -920px;
+      left: 180px;
+
+      .week__title {
+        text-align: left;
+      }
+      .week__text {
+        text-align: left;
+      }
+      .week__line-svg {
+        position: relative;
+        left: -240px;
+      }
+    }
+
+  }
 }
