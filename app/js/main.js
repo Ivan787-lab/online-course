@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector("progress").value;document.querySelector("#progress__span-earned").innerHTML=e+"₽"})();
