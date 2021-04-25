@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  transition: 0.5s all;
 }
 @font-face {
   font-family: "Roboto";
@@ -10,16 +11,19 @@
   font-family: "Roboto-Light";
   src: url(../fonts/Roboto-Light.ttf);
 }
+$bd: 1px solid white;
 main {
   width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
+  color: white;
   header {
     display: flex;
     flex-direction: column;
     background: url(../img/computer-bg.png) center no-repeat;
+    background-attachment: fixed;
     width: 100%;
     background-size: cover;
     color: white;
@@ -64,15 +68,14 @@ main {
         border-radius: 50px;
         border: none;
         outline: none;
-        color: white;
         cursor: pointer;
         font-family: "Roboto";
         font-size: 16px;
+        color: white;
       }
     }
     .header__title {
-      color: white;
-      margin: 270px 688px 510px 312px;
+      margin: 170px 688px 510px 312px;
 
       .header__h1 {
         width: 980px;
@@ -98,7 +101,6 @@ main {
         font-family: "Roboto";
         background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
         border-radius: 50px;
-        color: white;
         font-size: 16px;
         outline: none;
         border: none;
@@ -156,6 +158,132 @@ main {
           display: flex;
           justify-content: space-between;
           margin-top: 10px;
+        }
+      }
+    }
+  }
+  .main__about-us {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    padding: 150px;
+    box-sizing: border-box;
+
+    .about-us__what-do-we-do {
+      display: flex;
+      height: max-content;
+      .what-do-we-do__computer-img {
+        height: 450px;
+        .what-do-we-do__img {
+          width: 446px;
+          height: 446px;
+          position: relative;
+          top: -420px;
+          left: 50px;
+          user-select: none;
+        }
+      }
+      .what-do-we-do__text-block {
+        margin-top: 190px;
+        margin-left: 100px;
+
+        .text-block__title {
+          margin: -40px 0 40px 0;
+          font-size: 48px;
+          line-height: 140%;
+        }
+        .text-block__text {
+          font-size: 16px;
+          line-height: 160%;
+          width: 646px;
+        }
+      }
+    }
+
+    .about-us__quickly-start {
+      display: flex;
+      flex-direction: column;
+      width: 1315px;
+      align-self: center;
+      margin-top: 200px;
+
+      .quickly-start__text-block {
+        margin: 25px;
+        align-items: flex-start;
+
+        .text-block__title {
+          display: flex;
+          align-items: center;
+        }
+
+        .text-block__text {
+          font-size: 16px;
+          line-height: 160%;
+          width: 411px;
+          opacity: 0.5;
+        }
+      }
+      .quickly-start__infographic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .infographic__percentages-block {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 306px;
+          text-align: center;
+
+          .percentages-block__title {
+            font-size: 36px;
+            line-height: 140%;
+            margin-bottom: 20px;
+          }
+          .persentages-block__rectangle {
+            width: 324px;
+            height: 80px;
+            background: linear-gradient(
+              94.26deg,
+              #c89afc 9.51%,
+              #7c6afa 90.23%
+            );
+          }
+          .persentages-block__rectangle_75 {
+            height: 60px;
+            background: linear-gradient(
+              94.26deg,
+              #c89afc 9.51%,
+              #7c6afa 90.23%
+            );
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+          }
+          .persentages-block__rectangle_50 {
+            width: 324px;
+            height: 30px;
+            background: linear-gradient(
+              94.26deg,
+              #c89afc 9.51%,
+              #7c6afa 90.23%
+            );
+          }
+          .persentages-block__rectangle_final {
+            width: 324px;
+            height: 10px;
+            background: linear-gradient(
+              94.26deg,
+              #c89afc 9.51%,
+              #7c6afa 90.23%
+            );
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+          }
+          .persentages-block__text {
+            margin-top: 20px;
+            opacity: 0.5;
+            font-size: 14px;
+            line-height: 160%;
+            margin-top: 20px;
+          }
         }
       }
     }
